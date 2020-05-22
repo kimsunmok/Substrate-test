@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        기질결과
+    </title>
+</head>
+<body>
+    <div>
+        <h1> {{subject}} </br></h1>
+        <img src="{{ url_for('static', filename='/'.join(['images',image]))}}">
+    </div>
+        {% for i in result_explanation_summary %}
+            <h2> {{i}} </br></h2>
+        {% endfor %}
+
+    <h3> {{result_explanation}} </h3>
+</body>
+</html>
+
