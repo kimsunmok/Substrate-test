@@ -31,7 +31,7 @@ def calculate():
 
 
         user_result = {'Bloody':result['다'], 'gall':result['담'], 'depressed':result['우'], 'mucus':result['점']}
-
+        '''
         if max(user_result.values()) > 19:
             v = list(user_result.values())
             k = list(user_result.keys())
@@ -42,7 +42,7 @@ def calculate():
             image = 'only.jpg'
             return render_template('result.html', image=image, result_explanation=result_explanation,
                                    result_explanation_summary=result_explanation_summary)
-
+        '''
         v = list(user_result.values())
         k = list(user_result.keys())
         first_user_temperament = k[v.index(max(v))]
